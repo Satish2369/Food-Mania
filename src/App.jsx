@@ -16,6 +16,9 @@ import UserContext from "../utils/UserContext.jsx";
 import {useState} from "react";
 import { Provider } from "react-redux";
 import appStore from "../utils/appStore.jsx";
+import Cart from "./Components/Cart.jsx";
+import Footer from "./Components/Footer.jsx";
+
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
@@ -63,7 +66,7 @@ const Applayout = ()=>{
   <div id="app" className="app">
       <Header/>
       <Outlet/>
-
+      <Footer/>
 
   </div>
   </UserContext.Provider>
@@ -102,6 +105,11 @@ const appRouter = createBrowserRouter([
      path: "/restaurants/:resId",
      element:<RestaurantMenu/>
 
+
+
+    },{
+       path:"/cart",
+      element:<Cart/>
 
 
     }

@@ -18,7 +18,7 @@ const { loggedInUser } = useContext(UserContext);
 const cartItems = useSelector((store)=>store.cart.items)
 
 
-
+console.log(cartItems);
 
 
 
@@ -28,14 +28,14 @@ const cartItems = useSelector((store)=>store.cart.items)
 
 
     return (
-    <div className="flex  justify-between bg-blue-300 p-2 shadow-lg">
+    <div className="flex  justify-between bg-orange-500 p-1 shadow-lg">
          <div className="flex"> 
              <img src="./utils/foodmania.png" className="w-36" alt="" />
-               <h5 className="py-8 m-4 capitalize">Food Mania</h5>
+               <h5 className="py-8 m-4 capitalize text-4xl">Food Mania</h5>
          </div>
          <div className="nav-items">
-           <ul className="flex gap-8  m-12 align-middle font-bold uppercase">
-            <li>Online Status:{onlineStatus ? "online" : "offline"}</li>
+           <ul className="flex gap-8  m-12 align-middle font-bold uppercase text-xl">
+            {/* <li>Online Status:{onlineStatus ? "online" : "offline"}</li> */}
            <li><Link to="/">Home</Link></li>
            <li>
             <Link to="/about">About Us</Link>
@@ -46,7 +46,13 @@ const cartItems = useSelector((store)=>store.cart.items)
            <li>
             <Link to="/grocery">Grocery</Link>
            </li>
-            <li className="px-2 font-bold "><BsCart /> <sup>{cartItems.length}</sup></li>
+            <li className="px-2 font-bold ">
+
+              <Link to="/cart" className="flex">  <BsCart /> <sup className="text-blue-500">{cartItems.length}</sup></Link>
+            
+                
+                
+                </li>
             
 {/*            
            <li>

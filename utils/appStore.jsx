@@ -10,9 +10,6 @@ const appStore = configureStore({
 
         cart:cartReducer,
         
-
-
-
      }
 
 

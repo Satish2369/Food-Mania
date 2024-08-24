@@ -11,17 +11,17 @@ const ItemList= ({items})=>{
 const  dispatch = useDispatch();
 
 
+ 
+const handleAddItem =(items) =>{
 
-const handleAddItem =() =>{
-
-dispatch(addItem("pizza"))
+dispatch(addItem(items))
 
 }
 
 
 
 
-return <div>
+return <div className="">
 
 {items.map((items)=> (
 <div  key={items.card.info.id} className="px-4 m-2 border-b-2  text-left flex    justify-between ">
@@ -38,9 +38,8 @@ return <div>
 
 <div className="">
  
-<button className="p-2 mx-14 bg-black shadow-lg text-white  "  
-
-onClick={handleAddItem}
+<button className="p-2 mx-14 bg-black shadow-lg text-white "  
+onClick={()=>  handleAddItem(items)}
 
 
 >Add +</button>
