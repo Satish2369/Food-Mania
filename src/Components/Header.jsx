@@ -43,9 +43,9 @@ console.log(cartItems);
            <li>
             <Link to="/contact">Contact us</Link>
            </li>
-           <li>
+           {/* <li>
             <Link to="/grocery">Grocery</Link>
-           </li>
+           </li> */}
             <li className="px-2 font-bold ">
 
               <Link to="/cart" className="flex">  <BsCart /> <sup className="text-blue-500">{cartItems.length}</sup></Link>
