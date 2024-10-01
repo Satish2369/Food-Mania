@@ -30,7 +30,8 @@ console.log(cartItems);
     return (
     <div className="flex  justify-between bg-orange-500 p-1 shadow-lg text-[#1f2937]"> 
          <div className="flex"> 
-             <img src="/foodmania.png" className="w-36" alt="image loading" />
+             
+             <img src="https://th.bing.com/th/id/OIG4.MJVfDmz4zVy1Jc1D9fCp?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" className="w-36 " alt="image loading" />
                <h5 className="py-8 m-4 capitalize text-4xl">Food Mania</h5>
          </div>
          <div className="nav-items">

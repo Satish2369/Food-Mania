@@ -11,7 +11,7 @@ const Footer = () => {
                 
                 <div className='logo   flex flex-col gap-4'>
 
-                  <img src="./foodmania.png" alt="logo" className='w-36 h-36' />
+                  <img src="https://th.bing.com/th/id/OIG4.MJVfDmz4zVy1Jc1D9fCp?w=270&h=270&c=6&r=0&o=5&dpr=1.3&pid=ImgGn" alt="logo" className='w-36 h-36 ' />
                    <h3 className='text-white'>Where every meal is a deal!</h3>
                
                      <div className="social flex gap-2 text-white ml-8">
