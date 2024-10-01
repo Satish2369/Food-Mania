@@ -28,20 +28,20 @@ console.log(cartItems);
 
 
     return (
-    <div className="flex  justify-between bg-orange-500 p-1 shadow-lg">
+    <div className="flex  justify-between bg-orange-500 p-1 shadow-lg text-[#1f2937]"> 
          <div className="flex"> 
-             <img src="/utils/foodmania.png" className="w-36" alt="Image-Loading" />
+             <img src="/utils/foodmania.png" className="w-36" alt="image loading" />
                <h5 className="py-8 m-4 capitalize text-4xl">Food Mania</h5>
          </div>
          <div className="nav-items">
-           <ul className="flex gap-8  m-12 align-middle font-bold uppercase text-xl">
+           <ul className="flex gap-6  m-12 align-middle font-bold uppercase text-xl">
             {/* <li>Online Status:{onlineStatus ? "online" : "offline"}</li> */}
            <li><Link to="/">Home</Link></li>
            <li>
             <Link to="/about">About Us</Link>
            </li>
            <li>
-            <Link to="/contact">Contact us</Link>
+            <Link to="/contact">Contact Us</Link>
            </li>
            {/* <li>
             <Link to="/grocery">Grocery</Link>
@@ -60,8 +60,8 @@ console.log(cartItems);
            </li>
             */}
            <button 
-           className="login-button" onClick={()=>{
-            setBtnNameReact((prevName) => (prevName === "login" ? "logout" : "login"));
+           className="login-button w-[100px] pt-1 px-4 bg-black rounded-md text-white" onClick={()=>{
+            setBtnNameReact((prevName) => (prevName === "LogIn" ? "LogOut" : "LogIn"));
             // setBtnNameReact("logout");
           }
       
