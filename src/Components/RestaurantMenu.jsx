@@ -90,7 +90,7 @@ return (
 </div>
 
 
-<div className="text-center text-5xl flex ml-[40%]">   <GiCurledLeaf /><GiCurledLeaf />-Menu -<GiCurledLeaf /><GiCurledLeaf /></div>
+<div className="text-center text-5xl flex ml-[40%]">  Menu</div>
 
 
 

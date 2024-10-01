@@ -30,7 +30,7 @@ console.log(cartItems);
     return (
     <div className="flex  justify-between bg-orange-500 p-1 shadow-lg">
          <div className="flex"> 
-             <img src="./utils/foodmania.png" className="w-36" alt="" />
+             <img src="/utils/foodmania.png" className="w-36" alt="" />
                <h5 className="py-8 m-4 capitalize text-4xl">Food Mania</h5>
          </div>
          <div className="nav-items">
