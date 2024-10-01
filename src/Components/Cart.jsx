@@ -77,7 +77,7 @@ setBgColor("bg-green-600")
         {cartItems.length > 0 && <>
          
        <div className="flex justify-center m-10">
-                <button className="bg-blue-950 p-2 text-white px-3 rounded-md" onClick={handleOrderClick}  >{OrderNow}</button>
+                <button className= {`${BgColor} p-2 text-white px-3 rounded-md`} onClick={handleOrderClick}>{OrderNow}</button>
               
            </div>
 

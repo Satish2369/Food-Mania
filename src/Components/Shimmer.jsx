@@ -1,7 +1,7 @@
 const Shimmer = ()=>{
 
 
-    return <div className="Shimmer-container flex justify-center items-center flex-wrap">
+    return <div className="Shimmer-container flex justify-center items-center flex-wrap mt-10">
            
            <div className="Shimmer-cards p-1  w-80 h-96 bg-yellow-400 m-3 rounded-md">
                   <div className="  image-fake  m-[5%]  w-[90%]  h-48  border bg-orange-600 rounded-md"></div>
