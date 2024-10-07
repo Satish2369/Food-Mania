@@ -35,7 +35,7 @@ console.log(cartItems);
                <h5 className="py-8 m-4 capitalize text-4xl">Food Mania</h5>
          </div>
          <div className="nav-items">
-           <ul className="flex gap-6  m-12 align-middle font-bold uppercase text-xl">
+           <ul className="flex gap-6  m-12 align-middle font-bold uppercase text-xl   font-['Neue Montreal']">
             {/* <li>Online Status:{onlineStatus ? "online" : "offline"}</li> */}
            <li><Link to="/">Home</Link></li>
            <li>
