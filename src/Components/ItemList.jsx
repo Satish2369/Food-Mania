@@ -15,9 +15,10 @@ const ItemList = ({ items }) => {
     dispatch(removeItem(item));
   };
 
-  // Helper function to check if the item is in the cart
-  const isItemInCart = (itemId) => {
-    return cartItems.some((cartItem) => cartItem.card.info.id === itemId);
+  // Helper function to get item quantity in the cart
+  const getItemQuantity = (itemId) => {
+    const cartItem = cartItems.find(cartItem => cartItem.card.info.id === itemId);
+    return cartItem ? cartItem.quantity : 0;
   };
 
   return (
@@ -41,7 +42,7 @@ const ItemList = ({ items }) => {
             />
 
             <div className="flex justify-center items-center bg-black text-white p-2 mx-14 rounded-md shadow-lg cursor-pointer">
-              {!isItemInCart(item.card.info.id) ? (
+              {getItemQuantity(item.card.info.id) === 0 ? (
                 <div
                   className="button"
                   onClick={() => handleAddItem(item)}
@@ -57,8 +58,7 @@ const ItemList = ({ items }) => {
                     <FaMinus />
                   </div>
                   <div className="w-[10px]">
-                    {/* Find the quantity of this item in the cart */}
-                    {cartItems.filter(cartItem => cartItem.card.info.id === item.card.info.id).length}
+                    {getItemQuantity(item.card.info.id)}
                   </div>
                   <div
                     className="cursor-pointer"

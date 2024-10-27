@@ -23,7 +23,7 @@ return  (
         <IoChevronDownOutline className="ml-auto" />
       </div>
 
-      { showItems && <ItemList items={data.itemCards}  />}
+      { showItems && <ItemList items={data.itemCards}/>}
 
         </div>
 
